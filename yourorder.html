@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="checkoutBody">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+    <body class="checkoutBody">
+<!-- Nav -->
+<header>
+    <div class="logo">
+        <h1>THE DEVIL MADE ME DO IT</h1>
+    </div>
+    <nav class="centerNav">
+        <ul class="nav__links">
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">LOCATION</a></li>
+            <li><a href="#">ACCOUNT</a></li>
+            <li><a href="#">ORDER ONLINE</a></li>
+        </ul>    
+      </nav>
+    <ul class="navButtons">
+            <li><a href="#"><img src="images/home.png" class="homebtn"></a></li>
+            <li><a href="#"><img src="images/cart.png" class="cartbtn"></a></li>
+    </ul> 
+  </header>
+<!-- End of Nav -->
+
+<div class="pageTitle">
+    <h2>YOUR ORDER</h2>
+    </div>
+
+<!-- Shopping Cart -->
+<div class="shopping-cart">
+    <!-- Title -->
+    <div class="title">
+      ORDER SUMMARY
+    </div>
+
+    <!-- Product #1 -->
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+
+      <div class="image">
+        <img src="images/seitanslover2.png" alt="seitanslover" class="menuPics"/>
+      </div>
+
+      <div class="description">
+        <span>Seitan's Lover</span>
+        <!-- <span>Taco 1</span> -->
+        <span>Corn Tortilla, Marinated Seitan, Roasted Corn, Cilantro, Avocado, Purple Onion, Black Beans, Pomegranate Seeds</span>
+      </div>
+
+      <div class="quantity">
+        <button class="plus-btn" type="button" name="button">
+          <img src="images/plus.svg" alt="plus" />
+        </button>
+        <input type="text" name="name" value="1">
+        <button class="minus-btn" type="button" name="button">
+          <img src="images/minus.svg" alt="minus" />
+        </button>
+      </div>
+
+      <div class="total-price">$4.00</div>
+    </div>
+
+    <!-- Product #2 -->
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+
+      <div class="image">
+        <img src="images/devilqueso2.png" alt="theSinner" class="menuPics"/>
+      </div>
+
+      <div class="description">
+        <span>The Devil is in the Queso</span>
+        <!-- <span>Vegan Queso</span> -->
+        <span>Vegan Queso with House made corn tortilla chips</span>
+      </div>
+
+      <div class="quantity">
+        <button class="plus-btn" type="button" name="button">
+          <img src="images/plus.svg" alt="plus" />
+        </button>
+        <input type="text" name="name" value="1">
+        <button class="minus-btn" type="button" name="button">
+          <img src="images/minus.svg" alt="minus" />
+        </button>
+      </div>
+
+      <div class="total-price">$5.00</div>
+    </div>
+
+    <!-- Product #3 -->
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+
+      <div class="image">
+        <img src="images/mexcoke2.png" alt="fallenAngel" class="menuPics" />
+      </div>
+
+      <div class="description">
+        <span>Mexican Coke</span>
+        <span>Coco Cola</span>
+      </div>
+
+      <div class="quantity">
+        <button class="plus-btn" type="button" name="button">
+          <img src="images/plus.svg" alt="plus" />
+        </button>
+        <input type="text" name="name" value="1">
+        <button class="minus-btn" type="button" name="button">
+          <img src="images/minus.svg" alt="minus" />
+        </button>
+      </div>
+
+      <div class="total-price">$4.00</div>
+    </div>
+
+    <div class="title" style="text-align: right;">
+      Total    $13.00
+    </div>
+  </div>
+
+
+
+<!-- button -->
+<div  style="text-align: center">
+<a href="#"><button>CHECK OUT</button></a>
+</div>
+<br>
+
+  <!-- JavaScript -->
+      <script type="text/javascript">
+        $('.minus-btn').on('click', function(e) {
+              e.preventDefault();
+              var $this = $(this);
+              var $input = $this.closest('div').find('input');
+              var value = parseInt($input.val());
+  
+              if (value > 1) {
+                  value = value - 1;
+              } else {
+                  value = 0;
+              }
+  
+          $input.val(value);
+  
+          });
+  
+          $('.plus-btn').on('click', function(e) {
+              e.preventDefault();
+              var $this = $(this);
+              var $input = $this.closest('div').find('input');
+              var value = parseInt($input.val());
+  
+              if (value < 100) {
+                value = value + 1;
+              } else {
+                  value =100;
+              }
+  
+              $input.val(value);
+          });
+  
+        $('.like-btn').on('click', function() {
+          $(this).toggleClass('is-active');
+        });
+      </script>
+
+    </body>
+  </html>
