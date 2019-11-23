@@ -29,7 +29,7 @@ i {
 }
 header {
     padding: 30px 10%;
-    background-color: #323232;
+    background-color: #181717;
 }
 
 h1 {
@@ -367,4 +367,40 @@ input.savePay {
   height: 30px
 }
 
+
+/* Footer */
+
+.card{
+  background-color: #181717!important;
+}
+.btn-primary {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+}
+.card-title{
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20pt;
+}
+h6{
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 16pt;
+  text-align: right;
+  margin-right: 5rem;
+}
+.card{
+  border-radius: 0 !important;
+}
+.card-title{
+  margin-left: 6.5rem;
+}
+footer{
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+}
+
+/* Enf of Footer */
 
