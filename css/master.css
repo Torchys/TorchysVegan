@@ -16,10 +16,15 @@ body {
     min-height: 100vh;
 }
 
+.spaced {
+    padding-bottom: 200px;
+}
+
 /* homepage */
 
 .logo-spacing {
     text-align: center;
+    padding-bottom: 200px;
 }
 
 .home-button {
@@ -409,7 +414,7 @@ h7 {
 .description {
     padding-top: 0px;
     margin-right: 0px;
-    width: 25%;
+    width: 20%;
 }
    
 .description span {
@@ -501,7 +506,7 @@ input:focus {
 
 .total {
     text-align: right;
-    padding-right: 15%;
+    padding-right: 23%;
 }
 
 /* end of shopping cart */
