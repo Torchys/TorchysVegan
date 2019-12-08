@@ -25,6 +25,7 @@ body {
 .logo-spacing {
     text-align: center;
     padding-bottom: 200px;
+    padding-left: 5%;
 }
 
 .home-button {
@@ -103,13 +104,13 @@ h1:hover {
 
 .homebtn {
     margin-right: 5px;
-    width: 40px;
+    width: 60px;
     height: auto;
 }
 
 .cartbtn {
     margin-left: 5px;
-    width: 40px;
+    width: 60px;
     height: auto;
 }
 
@@ -124,6 +125,11 @@ h1:hover {
 .menu-space {
     margin-top: 20px;
     margin-bottom: 40px;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /*  End of Nav */
@@ -155,12 +161,6 @@ button {
     position: relative;
     top: -10px;
 }
-
-button:hover {
-    background-color: rgba(244, 154, 6, 1);
-    /* #d98229 */
-}
-
 
 h2 {
     color: black;
@@ -251,14 +251,14 @@ h4 {
     justify-content: center;
 }
 
+.modalImgSize {
+    padding-bottom: 10px;
+}
+
 .modal-header {
     border-bottom: 0 none;
     padding: 0px;
     margin-top: 10px;
-}
-
-.modal-body {
-    padding: 0px;
 }
 
 .modal-footer {
@@ -313,9 +313,21 @@ h7 {
     display: flex;
     justify-content: left;
     margin-left: 30%;
+    font-size: 25px;
+    font-family: 'Gotham Bold'bold;
+    margin-bottom: 1%;
 }
 
 /* product card */
+
+.checkOutBtn2 {
+    text-align: center;
+}
+
+.xpress {
+    width: 375px;
+    height: 75px;
+}
 
 .btn-co {
     background-color: #F79836;
@@ -447,6 +459,12 @@ h7 {
 }
 
 .quantity {
+    margin-left: 0%;
+    padding-top: 0px;
+    margin-right: 0px;
+}
+
+.quantityCart {
     margin-left: 5%;
     padding-top: 0px;
     margin-right: 0px;
